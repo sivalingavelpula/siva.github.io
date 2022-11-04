@@ -1,0 +1,150 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <title>Document</title>
+</head>
+<style>
+    
+    .center {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #button {
+        margin-left: 1500px;
+
+        margin: 10px;
+        float: right;
+
+    }
+
+    .header {
+        background-color: whitesmoke;
+    }
+
+    .footer {
+        position: fixed;
+        padding-top: 30px;
+
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        background-color: rgb(30, 158, 255);
+        color: white;
+        text-align: center;
+    }
+
+    .container {
+        background-color: lightblue;
+        width: 500px;
+        margin-bottom: 10px;
+    }
+   
+
+    label {
+        margin-right: 10px;
+    }
+
+    img {
+        margin-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+
+
+    }
+
+    button {
+        height: 50px;
+        width: 95px;
+    }
+    .submit{
+        padding-bottom: 5%;
+    }
+</style>
+
+<body>
+    <div class="header">
+
+        <img src="https://clutchco-static.s3.amazonaws.com/s3fs-public/logos/dhruv-soft-log_2.png?VersionId=hDz_.A7CoW1DsD5XgyORTXSsUyP1i0sQ"
+            style="width:200px;height:80px;">
+
+        <div id="button">
+            <a href="index.html"><button type="button">Home</button></a>
+            <a href="web to lead.html"> <button type="button">web to lead</button></a>
+            <a href="web to case.html"><button type="button">web to case</button></a>
+
+        </div>
+    </div>
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    <center>
+
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+            <input type=hidden name="oid" value="00D5h000006d3Sq">
+            <input type=hidden name="retURL" value="http://">
+
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail"                                  -->
+            <!--  value="sivalingavelpula@gmail.com">                                     -->
+            <!--  ----------------------------------------------------------------------  -->
+            <div class="center">
+                <div class="container">
+                    <h1 style="color:gray;">Web To Lead Form</h1>
+                    <label for="first_name">First Name: &nbsp;&nbsp;</label><input id="first_name" maxlength="40"
+                    name="first_name" size="35" type="text" style="margin-right: 65;" /><br><br><br>
+
+                <label for="last_name">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label><input id="last_name"
+                    maxlength="80" name="last_name" size="35" type="text" style="margin-right: 65;" /><br><br><br>
+
+                <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;</label><input id="email" maxlength="80" name="email" size="35" type="text"
+                    style="margin-right: 65;" /><br><br><br>
+
+                <label for="company">Company:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</label><input id="company"
+                    maxlength="40" name="company" size="35" type="text" style="margin-right: 35;" /><br><br><br>
+
+                <label
+                    for="city">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label><input id="city" maxlength="40" name="city" size="35" type="text"
+                    style="margin-right: 58;" /><br><br><br>
+
+                <label for="state">State/Province:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input
+                    id="state" maxlength="20" name="state" size="35" type="text"
+                    style="margin-right: 28px;" /><br><br><br>
+                    <div class="submit">
+
+                <input type="submit" name="submit" style="background-color:light gray;">
+            </div>
+                </div>
+            </div>
+            <div class="footer">
+                <footer>
+                    <p class="footer-text">@2022 siva@Dhruvsoft Private Limited.</p>
+                </footer>
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>
